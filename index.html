@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
 </head>
+
 <body>
     <header>
         <h1 class="text-5xl text-center mt-16">Welcome To <span class="font-semibold text-red-600">KB BANK</span></h1>
@@ -16,13 +18,22 @@
     <main>
         <section class="bg-red-300 w-3/4 mx-auto mt-6 p-8">
             <h3 class="text-2xl font-semibold mb-2">Please Login </h3>
-            <form action="">
-                <input class="border-2 rounded border-red-600 w-3/4 block mb-4" type="text" placeholder="Your Email">
-                <input class="border-2 rounded border-red-600 w-3/4 block mb-4" type="password" name="" id="" placeholder="Password">
-                <button class="bg-red-700 text-white  border-red-600 rounded px-4 py-2 font-semibold ">Submit</button>
-            </form>
+            <div action="">
+                <input id="User-Email" class="border-2 rounded border-red-600 w-3/4 block mb-4" type="text"
+                    placeholder="Your Email">
+                <input id="User-Password" class="border-2 rounded border-red-600 w-3/4 block mb-4" type="password" name="" id=""
+                    placeholder="Password">
+                <button id="Login-submit"
+                    class="bg-red-700 text-white  border-red-600 rounded px-4 py-2 font-semibold ">Submit</button>
+            </div>
         </section>
     </main>
-    
+
+
+
+
+
+    <script src="JS/bank.js"></script>
 </body>
+
 </html>
