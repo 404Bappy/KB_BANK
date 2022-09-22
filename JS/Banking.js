@@ -1,14 +1,27 @@
 //Handle Deposit Submit Event //
 
-document.getElementById("Deposite-submit").addEventListener('click', function(){
+document.getElementById("Deposite-submit").addEventListener('click', function () {
     //Get the Deposited Amount//
     const depositInput = document.getElementById('Deposit-amount');
-    const deposiAmount = depositInput.value ;
-    console.log(deposiAmount)
+    const newDepositAmount = depositInput.value;
+    console.log(newDepositAmount);
+
+    /// Update Deposit Total ////
 
     const totalDeposit = document.getElementById('Total-Deposit');
-   totalDeposit.innerText = deposiAmount;
+    const previousDepositAmount = totalDeposit.innerText;
+    const newDepositTotal = parseFloat(previousDepositAmount) + parseFloat(newDepositAmount);
+    totalDeposit.innerText = newDepositTotal;
 
-   //clear the deposit input field//
-   depositInput.value = ' ';
+    ////Updating Balancea ////////
+
+    const
+
+
+
+
+
+
+    //clear the deposit input field//
+    depositInput.value = ' ';
 })
