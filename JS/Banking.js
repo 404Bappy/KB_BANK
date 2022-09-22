@@ -15,8 +15,12 @@ document.getElementById("Deposite-submit").addEventListener('click', function ()
 
     ////Updating Balancea ////////
 
-    const
-
+    const balanceTotal = document.getElementById('Total-Balance');
+    const totalBalanceText = balanceTotal.innerText;
+    const previousBalanceTotal = parseFloat(totalBalanceText);
+    const newTotalBalance = previousBalanceTotal + parseFloat(newDepositAmount) ;
+    balanceTotal.innerText = newTotalBalance;
+ 
 
 
 
