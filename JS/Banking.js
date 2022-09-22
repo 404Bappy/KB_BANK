@@ -18,14 +18,16 @@ document.getElementById("Deposite-submit").addEventListener('click', function ()
     const balanceTotal = document.getElementById('Total-Balance');
     const totalBalanceText = balanceTotal.innerText;
     const previousBalanceTotal = parseFloat(totalBalanceText);
-    const newTotalBalance = previousBalanceTotal + parseFloat(newDepositAmount) ;
+    const newTotalBalance = previousBalanceTotal + parseFloat(newDepositAmount);
     balanceTotal.innerText = newTotalBalance;
- 
-
-
-
 
 
     //clear the deposit input field//
     depositInput.value = ' ';
+});
+
+////Handle Withdraw EVENT handler/////
+
+document.getElementById('withdraw-submit').addEventListener('click', function(){
+    console.log('withdraaw clicked' );
 })
