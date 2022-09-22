@@ -39,10 +39,10 @@ document.getElementById('withdraw-submit').addEventListener('click', function ()
 
      const totalWithdrawAmount =  document.getElementById('withdraw-Money');
      const previousWithdrawText = totalWithdrawAmount.innerText;
-    // const previousWithdrawTotal = parseFloat(previousWithdrawText);
+     const previousWithdrawTotal = parseFloat(previousWithdrawText);
 
-    // const newWithdrawTotal = previousWithdrawTotal + newWithdrawAmount;
-    // totalWithdrawAmount.innerText = newWithdrawTotal;
+    const newWithdrawTotal = previousWithdrawTotal + newWithdrawAmount;
+    totalWithdrawAmount.innerText = newWithdrawTotal;
 
 
 
